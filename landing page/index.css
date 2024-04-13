@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(17, 17, 17);
+    background-repeat:  no-repeat;
+   background-position: 778px 94px;
+}
+nav{
+    position: fixed;
+    line-height: 80px;
+    width: 100%;
+    background-color: rgb(175, 148, 28);
+    z-index: 10000;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    padding-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border-bottom: 3px solid yellow;
+    transition: .1s;
+}
+.chekbtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:953px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    body{
+        background-position:-48px 307px ;
+        
+    }
+    .intro{
+        font-size: 25px;
+    }
+}
+@media (max-width:858px){
+    .chekbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(83, 87, 29);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a {
+        font-size: 20px;
+        
+    }
+    a:hover,a.active{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .intro{
+        font-size: 20px;
+    }
+}
+.header{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 100px 100px;
+}
+.header .left{
+    width: 700px;
+    margin-top: 100px;
+    height: max-content;
+}
+
+.cclr{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    position: absolute;
+    bottom: 60px;
+    left: 300px;
+    height: max-content;
+}
+.cclr button{
+     background-color: whitesmoke; 
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 50%;
+        border: none;
+        border: 11px solid white;
+}
+
